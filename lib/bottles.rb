@@ -1,4 +1,8 @@
 class Bottles
+  def song
+    verses(99,0)
+  end
+
   def verses(starting_verse_number, ending_verse_number)
     starting_verse_number.downto(ending_verse_number).map do |verse_number|
       verse(verse_number)
