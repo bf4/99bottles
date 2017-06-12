@@ -1,6 +1,6 @@
 class Bottles
-  def verses(*verse_numbers)
-    verse_numbers.map do |verse_number|
+  def verses(starting_verse_number, ending_verse_number)
+    starting_verse_number.downto(ending_verse_number).map do |verse_number|
       verse(verse_number)
     end.join("\n")
   end
