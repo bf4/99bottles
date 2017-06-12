@@ -1,4 +1,10 @@
 class Bottles
+  def verses(*verse_numbers)
+    verse_numbers.map do |verse_number|
+      verse(verse_number)
+    end.join("\n")
+  end
+
   def verse(verse_number)
     if verse_number.zero?
       shopping_verse
